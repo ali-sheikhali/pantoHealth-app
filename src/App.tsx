@@ -11,7 +11,6 @@ function App() {
     const fetchData = async () => {
       try {
         const data = await getCities();
-        console.log("data from api:", data);
         setData(data);
       } catch (error) {
         console.error("error:", error);
