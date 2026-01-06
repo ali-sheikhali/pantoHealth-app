@@ -20,8 +20,8 @@ export default function ChoiceCity({ cities }: ChoiceCityProps) {
   };
 
   return (
-    <div className="flex justify-between items-center">
-      <select className="w-50 bg-gray-300 rounded-md px-4 py-1 focus:outline-none border border-gray-700" value={selectedCity ?? ""} onChange={handleChange}>
+    <div className="flex flex-col gap-4 md:flex-row  md:justify-between md:items-center">
+      <select className="w-full md:w-50 bg-gray-300 rounded-md px-4 py-1 focus:outline-none border border-gray-700" value={selectedCity ?? ""} onChange={handleChange}>
         <option className="" value="" disabled>
           choice city
         </option>

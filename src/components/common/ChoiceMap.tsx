@@ -46,7 +46,7 @@ export default function ChoiceMap({ data }: ChoiceMapProps) {
   return (
     <>
       {/* ---------- Station List ---------- */}
-      <div className="flex gap-10 mb-4">
+      <div className="flex flex-col gap-5 md:flex-row md:gap-10 mb-4">
         {stationOfCity.map((station) => (
           <div
             key={station.id}
